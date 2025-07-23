@@ -1,5 +1,5 @@
 data_ingestion:
-  test_size: 0.25
+  test_size: 0.2
 
 feature_engg:
   max_features: 20
