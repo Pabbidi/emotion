@@ -23,7 +23,8 @@ X_test = test_data['content'].values
 y_test = test_data['sentiment'].values
 
 # Apply Bag of Words (CountVectorizer)
-vectorizer = CountVectorizer(max_features=max_features)
+from sklearn.feature_extraction.text import TfidfVectorizer
+vectorizer = TfidfVectorizer(max_features=max_features)
 
 # Fit the vectorizer on the training data and transform it to feature vectors
 X_train_bow = vectorizer.fit_transform(X_train)
